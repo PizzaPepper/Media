@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.media {
+    height:100vh;
+
+}
+
+.disc {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disc-img{
+    padding: 40px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+.repro {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(193, 32, 32);
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    padding: 10px;
+}
+
+#control {
+    padding: 10px;
+
+}
+
+#control button {
+    background-color: rgb(244, 244, 244);
+    margin: 0 10px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+#control button:hover{
+    cursor: pointer;
+}
+
+
+#nameMusic {
+    color: aquamarine;
+}
+
+#slider {
+	width: 90%;
+	height: 10px;
+	background: #151518;
+   border-radius: 2px;
+   
+}
+
+#slider div {
+    width: 4px;
+    height: 10px;
+    margin-top: 1px;
+    background: #EF6DBC;
+    border-radius: 2px;
+ }
